@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.2rem;
+}
+
+.profileSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.profileImage{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}

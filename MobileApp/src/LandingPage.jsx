@@ -15,12 +15,12 @@ const LandingPage = () => {
 
                 <div className={styles.buttonGroup}>
                 <button className={styles.createBtn}
-                    onClick={()=>{navigate("/SignUpPage")}}
+                    onClick={() => navigate("/signup")}
                 >
                     Create Account
                 </button>
                 <button className={styles.loginBtn}
-                    onClick={()=>{navigate("/LoginPage")}}
+                    onClick={() => navigate("/login")}
                 >
                     Already Registered? Login
                 </button>
