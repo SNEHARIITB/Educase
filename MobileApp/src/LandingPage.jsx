@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./LandingPage.module.css";
+import { useNavigate } from "react-router-dom";
 
 const LandingPage = () => {
+    const navigate = useNavigate();
   return (
-    <div className={styles.appWrapper}>
+    
         <div className={styles.container}>
             <div className={styles.contentSection}>
                 <h1 className={styles.title}>Welcome to PopX</h1>
@@ -12,14 +14,20 @@ const LandingPage = () => {
                 </p>
 
                 <div className={styles.buttonGroup}>
-                <button className={styles.createBtn}>Create Account</button>
-                <button className={styles.loginBtn}>
+                <button className={styles.createBtn}
+                    onClick={()=>{navigate("/SignUpPage")}}
+                >
+                    Create Account
+                </button>
+                <button className={styles.loginBtn}
+                    onClick={()=>{navigate("/LoginPage")}}
+                >
                     Already Registered? Login
                 </button>
                 </div>
             </div>
         </div>
-    </div>
+    
   );
 };
 

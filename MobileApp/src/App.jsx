@@ -1,13 +1,34 @@
-import LandingPage from "./LandingPage"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./LandingPage";
+import LoginPage from "./Pages/LoginPage";
+import SignUpPage from "./Pages/SignUpPage";
 
 
 function App() {
 
+  const appstyles = {
+    margin : "0 auto",
+    maxWidth: "430px", 
+      
+    minWidth: "320px", 
+    
+    backgroundColor: "hsl(210, 20%, 98%)",
+    textAlign: "left",
+    border: "1px solid hsl(220, 13%, 91%)",
+    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.05)",
+  }
+
 
   return (
-    <>
-    <LandingPage/>
-    </>
+    <div style={appstyles}>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage/>}/>
+        <Route path="/SignUpPage" element={<SignUpPage/>}/>
+        <Route path="/LoginPage" element={<LoginPage/>}/>
+      </Routes>
+    </Router>
+    </div>
   )
 }
 
