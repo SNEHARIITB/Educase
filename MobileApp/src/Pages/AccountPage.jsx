@@ -7,14 +7,14 @@ const AccountPage = () => {
   console.log(matcheduser);
   return (
     <div className={styles.container}>
-      {/* Top Section */}
+
       <div className={styles.topSection}>
         <h4>Account Settings</h4>
       </div>
 
-      {/* Main Section */}
+
       <div className={styles.mainSection}>
-        {/* Profile Section */}
+
         <div className={styles.profileSection}>
           <div className={styles.imageWrapper}>
             <img
@@ -22,7 +22,7 @@ const AccountPage = () => {
               src="https://placehold.co/100x100"
               alt="Profile"
             />
-            <span className={styles.editIcon}>✎</span>
+            <span className={styles.editIcon}>👤</span>
           </div>
           <div className={styles.profileInfo}>
             <h2 className={styles.name}>{matcheduser.fullName}</h2>
@@ -30,7 +30,6 @@ const AccountPage = () => {
           </div>
         </div>
 
-        {/* Bio / Description */}
         <p className={styles.description}>
           Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam
           Nonumy Eirmod Tempor Invidunt Ut Labore Et Dolore Magna Aliquyam

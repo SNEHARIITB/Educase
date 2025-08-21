@@ -75,7 +75,7 @@ const LoginPage = () => {
                 />
                 </div>
 
-                <button type="submit" className={styles.loginBtn}>
+                <button type="submit" className={loginCredentials.email && loginCredentials.password ? styles.loginBtnenabled : styles.loginBtndisabled }>
                 Login
                 </button>
             </form>

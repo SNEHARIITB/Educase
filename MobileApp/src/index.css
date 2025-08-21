@@ -1,8 +1,14 @@
 body {
-  margin: 0;
   background-color: hsl(220, 13%, 95%);
   font-family: Arial, sans-serif;
 }
 * {
   box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }

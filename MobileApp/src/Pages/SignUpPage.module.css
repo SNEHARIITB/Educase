@@ -1,9 +1,11 @@
 .container {
-  padding: 2rem 1.2rem;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1rem 1rem;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  border-radius: 10px;
+  font-family: Arial, sans-serif;
 }
 
 .title {
@@ -15,9 +17,11 @@
 }
 
 .form {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: space-between;
+  padding-bottom: 1rem;
 }
 
 .contentSection {
@@ -29,13 +33,20 @@
 .inputGroup {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
 }
 
 .inputGroup label {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: hsl(220, 15%, 25%);
+  color:hsl(262, 83%, 58%); 
+  margin-bottom: 0.3rem;
+}
+
+.inputGroup input {
+  padding: 0.6rem;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 6px;
+  font-size: 0.9rem;
 }
 
 .required {
@@ -56,7 +67,7 @@
 }
 
 .inputGroup input:focus {
-  border-color: hsl(245, 70%, 55%);
+  border-color: hsl(262, 83%, 58%); 
   outline: none;
   box-shadow: 0 0 0 2px hsla(245, 70%, 55%, 0.2);
 }
@@ -65,11 +76,15 @@
   display: flex;
   gap: 1.5rem;
   margin-top: 0.3rem;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 
 .radioGroup input {
   margin-right: 0.4rem;
+}
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
 }
 
 .buttonSection {
@@ -79,7 +94,7 @@
 .signupBtn {
   width: 100%;
   padding: 0.9rem;
-  background: hsl(245, 70%, 55%);
+  background:  hsl(262, 83%, 58%); 
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
   font-weight: 600;
