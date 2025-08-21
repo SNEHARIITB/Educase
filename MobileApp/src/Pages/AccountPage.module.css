@@ -1,16 +1,90 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 1.2rem;
+.container {
+    height: 100vh;
+ 
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
 }
 
-.profileSection{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.topSection {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e5e5;
 }
-.profileImage{
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+
+.topSection h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.mainSection {
+  padding: 16px;
+  background: #f3f3f3;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  
+}
+
+.imageWrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-right: 12px;
+}
+
+.profileImage {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.editIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #6a5acd;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.email {
+  margin: 2px 0 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+  margin: 0;
+}
+
+.bottomSection {
+  
+  background: #f3f3f3;
+  border-top: 1px dashed #ddd;
 }

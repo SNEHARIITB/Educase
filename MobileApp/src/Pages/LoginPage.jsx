@@ -33,7 +33,7 @@ const LoginPage = () => {
             
             localStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
 
-            navigate("/account");
+            navigate("/account",{state:matchedUser});
             } else {
             setError("Invalid email or password ❌");
             alert(error);
